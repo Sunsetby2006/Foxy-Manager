@@ -16,7 +16,7 @@ https://sunsetby2006.github.io/Foxy-Manager/
 Además recomendamos leer el documento de word adjunto en el main del repositorio, ahí se encuentra toda la documentación del proyecto.
 
 Equipo comformado por:
-Omar Guevara
-Ivan SIlverio
-Diego Medellín
-Demian Quiroga
+- Omar Guevara
+- Ivan Silverio
+- Diego Medellín
+- Demian Quiroga
