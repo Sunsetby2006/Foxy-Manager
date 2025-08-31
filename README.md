@@ -10,6 +10,8 @@ Para el buen funcionamiento de Foxy Manager, le recomendamos lo siguiente:
 4. Abra el archivo Main.java dentro de src.
 5. Ejecute únicamente ese archivo (donde dice "run" encima de public static void main) y se abrirá la ventana principal de nuestro proyecto.
 
+Adicionalmente, asegurarse de tener java instalado en la computadora, adjuntamos el enlace para instalarlo: https://www.java.com/es/download/manual.jsp
+
 Si desea conocer más acerca de la visión y los detalles del proyecto, también contamos con una página web:
 https://sunsetby2006.github.io/Foxy-Manager/
 Además recomendamos leer el documento de word adjunto en el main del repositorio, ahí se encuentra toda la documentación del proyecto.
