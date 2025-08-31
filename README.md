@@ -1,7 +1,7 @@
 # Foxy-Manager
 Proyecto del certificado de Estructura de datos 2025
 
-Bienvenido a nuestro proyecto.
+Bienvenid@ a nuestro proyecto.
 Para el buen funcionamiento de Foxy Manager, le recomendamos lo siguiente:
 
 1. Descargue la carpeta llamada proyecto.
