@@ -78,11 +78,11 @@ y aumenta la eficiencia en cocina.
           organizado y                                   
           documentado                                    
 
-  5       Garantizar           Omar Guevara              ✅ Completado
+  5       Garantizar           Omar Guevara               Completado
           eficiencia y lógica                            
           clara                                          
 
-  6       Pruebas de todas las Omar Guevara & Diego      ✅ Completado
+  6       Pruebas de todas las Omar Guevara & Diego       Completado
           funcionalidades      Medellín                  
   -------------------------------------------------------------------------
 
