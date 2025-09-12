@@ -18,7 +18,9 @@ Manager, le recomendamos lo siguiente:
     nuestro proyecto.\
 -   Adicionalmente, asegúrese de tener **Java** instalado en la
     computadora. Enlace de descarga:
-    <https://www.java.com/es/download/manual.jsp>
+    <https://www.java.com/es/download/manual.jsp>\
+- Nota: Ya se puede bajar únicamente el archivo "FoxyManager.jar"
+  para ejecutarlo de forma más sencilla. (Tener instalado java aún en requisito)
 
 Si desea conocer más acerca de la visión y los detalles del proyecto,
 también contamos con una página web:\
@@ -57,8 +59,8 @@ y aumenta la eficiencia en cocina.
 
 | ID | Requisito | Atendido por | Estatus |
 |----|-----------|--------------|---------|
-| 1  | Implementar las tres estructuras de datos (pila, cola y lista) con operaciones básicas | Iván Silverio & Demian Quiroga | Completado |
-| 2  | Desarrollar interfaz en consola intuitiva con gestión de tareas | Iván Silverio & Demian Quiroga | Completado |
+| 1  | Implementar las tres estructuras de datos (pila, cola y lista) con operaciones básicas | Ivan Silverio & Demian Quiroga | Completado |
+| 2  | Desarrollar interfaz en consola intuitiva con gestión de tareas | Ivan Silverio & Demian Quiroga | Completado |
 | 3  | Visualización de todas las tareas pendientes ordenadas por urgencia | Demian Quiroga & Diego Medellín | Completado |
 | 4  | Diseño claro, organizado y documentado | Omar Guevara | Completado |
 | 5  | Garantizar eficiencia y lógica clara | Omar Guevara | Completado |
