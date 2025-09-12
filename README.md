@@ -55,34 +55,14 @@ y aumenta la eficiencia en cocina.
 
 ## Requisitos del Sistema
 
-  ------------------------------------------------------------------------
-  ID    Requisito             Atendido por               Estatus
-  ----- --------------------- -------------------------- -----------------
-  1     Implementar las tres  Iván Silverio & Demian     ✅ Completado
-        estructuras de datos  Quiroga                    
-        (pila, cola y lista)                             
-        con operaciones                                  
-        básicas                                          
-
-  2     Desarrollar interfaz  Iván Silverio & Demian     ✅ Completado
-        en consola intuitiva  Quiroga                    
-        con gestión de tareas                            
-
-  3     Visualización de      Demian Quiroga & Diego     ✅ Completado
-        todas las tareas      Medellín                   
-        pendientes ordenadas                             
-        por urgencia                                     
-
-  4     Diseño claro,         Omar Guevara               ✅ Completado
-        organizado y                                     
-        documentado                                      
-
-  5     Garantizar eficiencia Omar Guevara               ✅ Completado
-        y lógica clara                                   
-
-  6     Pruebas de todas las  Omar Guevara & Diego       ✅ Completado
-        funcionalidades       Medellín                   
-  ------------------------------------------------------------------------
+| ID | Requisito | Atendido por | Estatus |
+|----|-----------|--------------|---------|
+| 1  | Implementar las tres estructuras de datos (pila, cola y lista) con operaciones básicas | Iván Silverio & Demian Quiroga | ✅ Completado |
+| 2  | Desarrollar interfaz en consola intuitiva con gestión de tareas | Iván Silverio & Demian Quiroga | ✅ Completado |
+| 3  | Visualización de todas las tareas pendientes ordenadas por urgencia | Demian Quiroga & Diego Medellín | ✅ Completado |
+| 4  | Diseño claro, organizado y documentado | Omar Guevara | ✅ Completado |
+| 5  | Garantizar eficiencia y lógica clara | Omar Guevara | ✅ Completado |
+| 6  | Pruebas de todas las funcionalidades | Omar Guevara & Diego Medellín | ✅ Completado |
 
 ------------------------------------------------------------------------
 
