@@ -22,7 +22,7 @@ Manager, le recomendamos lo siguiente:
 
 Si desea conocer más acerca de la visión y los detalles del proyecto,
 también contamos con una página web:\
-👉 [Foxy Manager en GitHub
+[Foxy Manager en GitHub
 Pages](https://sunsetby2006.github.io/Foxy-Manager/)
 
 También recomendamos leer el documento de Word adjunto en el main del
@@ -57,12 +57,12 @@ y aumenta la eficiencia en cocina.
 
 | ID | Requisito | Atendido por | Estatus |
 |----|-----------|--------------|---------|
-| 1  | Implementar las tres estructuras de datos (pila, cola y lista) con operaciones básicas | Iván Silverio & Demian Quiroga | ✅ Completado |
-| 2  | Desarrollar interfaz en consola intuitiva con gestión de tareas | Iván Silverio & Demian Quiroga | ✅ Completado |
-| 3  | Visualización de todas las tareas pendientes ordenadas por urgencia | Demian Quiroga & Diego Medellín | ✅ Completado |
-| 4  | Diseño claro, organizado y documentado | Omar Guevara | ✅ Completado |
-| 5  | Garantizar eficiencia y lógica clara | Omar Guevara | ✅ Completado |
-| 6  | Pruebas de todas las funcionalidades | Omar Guevara & Diego Medellín | ✅ Completado |
+| 1  | Implementar las tres estructuras de datos (pila, cola y lista) con operaciones básicas | Iván Silverio & Demian Quiroga | Completado |
+| 2  | Desarrollar interfaz en consola intuitiva con gestión de tareas | Iván Silverio & Demian Quiroga | Completado |
+| 3  | Visualización de todas las tareas pendientes ordenadas por urgencia | Demian Quiroga & Diego Medellín | Completado |
+| 4  | Diseño claro, organizado y documentado | Omar Guevara | Completado |
+| 5  | Garantizar eficiencia y lógica clara | Omar Guevara | Completado |
+| 6  | Pruebas de todas las funcionalidades | Omar Guevara & Diego Medellín | Completado |
 
 ------------------------------------------------------------------------
 
