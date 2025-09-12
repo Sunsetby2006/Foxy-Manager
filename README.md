@@ -22,7 +22,7 @@ Manager, le recomendamos lo siguiente:
 
 Si desea conocer más acerca de la visión y los detalles del proyecto,
 también contamos con una página web:\
- [Foxy Manager en GitHub
+👉 [Foxy Manager en GitHub
 Pages](https://sunsetby2006.github.io/Foxy-Manager/)
 
 También recomendamos leer el documento de Word adjunto en el main del
@@ -53,38 +53,36 @@ y aumenta la eficiencia en cocina.
 
 ------------------------------------------------------------------------
 
-## Requisitos del Sistema (Completados)
+## Requisitos del Sistema
 
-  -------------------------------------------------------------------------
-  ID      Requisito            Atendido por              Estatus
-  ------- -------------------- ------------------------- ------------------
-  1       Implementar las tres Iván Silverio & Demian     Completado
-          estructuras de datos Quiroga                   
-          (pila, cola y lista)                           
-          con operaciones                                
-          básicas                                        
+  ------------------------------------------------------------------------
+  ID    Requisito             Atendido por               Estatus
+  ----- --------------------- -------------------------- -----------------
+  1     Implementar las tres  Iván Silverio & Demian     ✅ Completado
+        estructuras de datos  Quiroga                    
+        (pila, cola y lista)                             
+        con operaciones                                  
+        básicas                                          
 
-  2       Desarrollar interfaz Iván Silverio & Demian     Completado
-          en consola intuitiva Quiroga                   
-          con gestión de                                 
-          tareas                                         
+  2     Desarrollar interfaz  Iván Silverio & Demian     ✅ Completado
+        en consola intuitiva  Quiroga                    
+        con gestión de tareas                            
 
-  3       Visualización de     Demian Quiroga & Diego     Completado
-          todas las tareas     Medellín                  
-          pendientes ordenadas                           
-          por urgencia                                   
+  3     Visualización de      Demian Quiroga & Diego     ✅ Completado
+        todas las tareas      Medellín                   
+        pendientes ordenadas                             
+        por urgencia                                     
 
-  4       Diseño claro,        Omar Guevara               Completado
-          organizado y                                   
-          documentado                                    
+  4     Diseño claro,         Omar Guevara               ✅ Completado
+        organizado y                                     
+        documentado                                      
 
-  5       Garantizar           Omar Guevara               Completado
-          eficiencia y lógica                            
-          clara                                          
+  5     Garantizar eficiencia Omar Guevara               ✅ Completado
+        y lógica clara                                   
 
-  6       Pruebas de todas las Omar Guevara & Diego       Completado
-          funcionalidades      Medellín                  
-  -------------------------------------------------------------------------
+  6     Pruebas de todas las  Omar Guevara & Diego       ✅ Completado
+        funcionalidades       Medellín                   
+  ------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
@@ -119,3 +117,4 @@ estructuras de datos aplicadas a un contexto real. El desarrollo de Foxy
 Manager no solo fortaleció las habilidades técnicas del equipo en **Java
 y GitHub**, sino también la capacidad de trabajar colaborativamente en
 un entorno académico y práctico.
+
