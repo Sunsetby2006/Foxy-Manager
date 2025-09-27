@@ -1,222 +1,381 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foxy Manager</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/FOXY%20MANAGER%20owo.png">
-  <style>
-    :root {
-      --color1: #ecac5a;
-      --color2: #f1bb68;
-      --color3: #f6ca77;
-      --color4: #fad885;
-      --color5: #ffe793;
-      --dark: #1c1c1c;
-      --light: #ffffff;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--dark);
-      color: var(--light);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--color1);
-      color: var(--dark);
-      padding: 1rem;
-    }
-
-    .header-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      width: 100px;
-      height: auto;
-    }
-
-    .header-text {
-      text-align: left;
-    }
-
-    .header-text h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: var(--dark);
-    }
-
-    .header-text h3 {
-      margin: 0.2rem 0;
-      font-weight: normal;
-      color: var(--dark);
-    }
-
-    .header-text p {
-      margin: 0;
-      font-size: 1rem;
-      color: var(--dark);
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background: var(--color2);
-      padding: 0.5rem;
-    }
-
-    nav a {
-      color: var(--dark);
-      text-decoration: none;
-      margin: 0.5rem 1rem;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: var(--color4);
-      border-bottom: 2px solid var(--color3);
-      padding-bottom: 0.5rem;
-    }
-
-    .equipo {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: var(--color3);
-      color: var(--dark);
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      background: var(--color1);
-      color: var(--dark);
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxy Manager</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/FOXY%20MANAGER%20owo.png">
+    <style>
+        :root {
+            --color1: #ecac5a;
+            --color2: #f1bb68;
+            --color3: #f6ca77;
+            --color4: #fad885;
+            --color5: #ffe793;
+            --dark: #1c1c1c;
+            --light: #ffffff;
+        }
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--color1), var(--color3));
+            color: var(--dark);
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        .header-text {
+            text-align: left;
+        }
+        .header-text h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--dark);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .header-text h1 .foxy {
+            color: #ff6b35; /* Color diferente para "Foxy" */
+        }
+        .header-text h1 .manager {
+            color: var(--dark); /* Color oscuro para "Manager" */
+        }
+        .header-text h3 {
+            margin: 0.2rem 0;
+            font-weight: normal;
+            color: var(--dark);
+        }
+        .header-text p {
+            margin: 0;
+            font-size: 1rem;
+            color: var(--dark);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: var(--color2);
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: var(--dark);
+            text-decoration: none;
+            margin: 0.5rem 1rem;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: var(--color4);
+            transform: translateY(-2px);
+        }
+        section {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+            scroll-margin-top: 80px;
+        }
+        h2 {
+            color: var(--color4);
+            border-bottom: 2px solid var(--color3);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            font-size: 2rem;
+        }
+        .equipo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: var(--color3);
+            color: var(--dark);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: var(--color1);
+            color: var(--dark);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .highlight {
+            color: var(--color5);
+            font-weight: bold;
+        }
+        .smart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .smart-card {
+            background: var(--color3);
+            color: var(--dark);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .smart-card h3 {
+            margin-top: 0;
+            color: var(--dark);
+            border-bottom: 2px solid var(--color4);
+            padding-bottom: 0.5rem;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--color1);
+            color: var(--dark);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            display: none;
+            z-index: 99;
+            transition: all 0.3s ease;
+        }
+        .back-to-top:hover {
+            background: var(--color2);
+            transform: translateY(-3px);
+        }
+        .lista-estilo {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .lista-estilo li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .lista-estilo li:before {
+            content: "•";
+            color: var(--color4);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -0.2rem;
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <div class="header-container">
-      <!-- Placeholder del logo sin fondo -->
-      <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/FOXY%20MANAGER%20owo.png" alt="Logo Foxy Manager" class="logo">
-      
-      <!-- Texto -->
-      <div class="header-text">
-        <h1>Foxy Manager</h1>
-        <h3>Software para tu negocio</h3>
-        <p>Gestión inteligente de pedidos y órdenes</p>
-      </div>
-    </div>
-  </header>
-
-  <nav>
-    <a href="#sobre">Sobre Nosotros</a>
-    <a href="#metodologia">Metodología</a>
-    <a href="#ventajas">Ventajas</a>
-    <a href="#equipo">Nuestro Equipo</a>
-  </nav>
-
-  <section id="sobre">
-    <h2>Sobre Nosotros</h2>
-    <p>
-      Foxy Manager es una empresa dedicada a la gestión de pedidos y órdenes, principalmente para restaurantes, aunque también apoyamos a emprendedores que trabajan bajo pedidos.
-    </p>
-    <p>
-      La inspiración de nuestra imagen proviene de los zorros: animales astutos, adaptables y carismáticos. Así como ellos, nuestro software se adapta fácilmente a las necesidades de cada cliente, ofreciendo soluciones creativas y eficientes. 
-    </p>
-    <p>
-      Nuestro sistema combina planeación estratégica e innovación, y los colores naranjas reflejan la energía y creatividad que ponemos en cada desarrollo.
-    </p>
-  </section>
-
-  <section id="metodologia">
-    <h2>Metodología del Sistema</h2>
-    <p>
-      Nuestro sistema aprovecha estructuras de datos avanzadas (pilas, colas y listas) para gestionar pedidos de forma eficiente. Cada orden se clasifica por prioridad, considerando factores como el canal de pedido (autoservicio o caja) y la complejidad del combo.
-    </p>
-    <p>
-      La metodología asegura un flujo organizado: los pedidos de autoservicio se atienden en pila (uno a la vez), mientras que los demás se procesan mediante una cola de prioridad. De esta forma optimizamos tiempos, reducimos filas y mejoramos la experiencia del cliente.
-    </p>
-  </section>
-
-  <section id="ventajas">
-    <h2>Ventajas de Contratarnos</h2>
-    <ul>
-      <li>Optimización del tiempo y esfuerzo en la cocina.</li>
-      <li>Mayor eficiencia en la atención de pedidos.</li>
-      <li>Reducción de tiempos de espera y filas.</li>
-      <li>Mayor satisfacción y fidelización de los clientes.</li>
-      <li>Adaptabilidad del software a distintos negocios.</li>
-    </ul>
-  </section>
-
-  <section id="equipo">
-    <h2>Nuestro Equipo</h2>
-    <div class="equipo">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/SUNSET.jpeg" alt="Omar">
-        <h3>Omar Fernando Guevara Cavazos</h3>
-        <p>Arquitecto y Diseñador Web</p>
-      </div>
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/Ivan.jpeg" alt="Ivan" alt="Iván">
-        <h3>Ivan Gerardo Silverio Tenorio</h3>
-        <p>Desarrollador y Programador</p>
-      </div>
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/demian.jpeg" alt="Demian">
-        <h3>Demian Kalil Quiroga Suárez</h3>
-        <p>Desarrollador y Programador</p>
-      </div>
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/Diego.jpeg" alt="Diego">
-        <h3>Diego Alejandro Medellín Méndez</h3>
-        <p>Analista y Escritor Técnico</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Foxy Manager</p>
-  </footer>
-
+    <header>
+        <div class="header-container">
+            <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/FOXY%20MANAGER%20owo.png" alt="Logo Foxy Manager" class="logo">
+            <div class="header-text">
+                <h1><span class="foxy">Foxy</span> <span class="manager">Manager</span></h1>
+                <h3>Software para tu negocio</h3>
+                <p>Gestión inteligente de pedidos y órdenes</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#sobre">Sobre Nosotros</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#proyecto">Proyecto Final</a>
+        <a href="#fundamentos">Fundamentos</a>
+        <a href="#estrategias">Estrategias</a>
+        <a href="#reflexion">Reflexión</a>
+        <a href="#practicas">Mejores Prácticas</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#equipo">Nuestro Equipo</a>
+    </nav>
+    
+    <section id="sobre">
+        <h2>Sobre Nosotros</h2>
+        <p>Foxy Manager es un software como servicio (SaaS) dedicada a la gestión de pedidos y órdenes, principalmente para restaurantes, aunque también apoyamos a emprendedores que trabajan bajo pedidos.</p>
+        <p>La inspiración de nuestra imagen proviene de los zorros: animales astutos, adaptables y carismáticos. Así como ellos, nuestro software se adapta fácilmente a las necesidades de cada cliente, ofreciendo soluciones creativas y eficientes.</p>
+        <p>Nuestro sistema combina planeación estratégica e innovación, y los colores naranjas reflejan la energía y creatividad que ponemos en cada desarrollo.</p>
+    </section>
+    
+    <section id="metodologia">
+        <h2>Metodología del Sistema</h2>
+        <p>Nuestro sistema aprovecha estructuras de datos avanzadas (<span class="highlight">pilas</span>, <span class="highlight">colas</span> y <span class="highlight">listas</span>) para gestionar pedidos de forma eficiente. Cada orden se clasifica por prioridad, considerando factores como el canal de pedido (autoservicio o caja) y la complejidad del combo.</p>
+        <p>La metodología asegura un flujo organizado, donde los pedidos de autoservicio se atienden en pila (uno a la vez), mientras que los demás se procesan mediante una cola de prioridad. De esta forma optimizamos tiempos, reducimos filas y mejoramos la experiencia del cliente.</p>
+    </section>
+    
+    <section id="ventajas">
+        <h2>Ventajas de Contratarnos</h2>
+        <ul class="lista-estilo">
+            <li>Optimización del tiempo y esfuerzo en la cocina.</li>
+            <li>Mayor eficiencia en la atención de pedidos.</li>
+            <li>Reducción de tiempos de espera y filas.</li>
+            <li>Mayor satisfacción y fidelización de los clientes.</li>
+            <li>Adaptabilidad del software a distintos negocios.</li>
+            <li>Personalización al 100% para nuestros clientes</li>
+        </ul>
+    </section>
+    
+    <section id="proyecto">
+        <h2>Explicación del Proyecto</h2>
+        <p>Desarrollamos un programa en <span class="highlight">Java</span> de gestión de un negocio de comida rápida. Utilizando las distintas estructuras de datos que hemos visto durante el curso (<span class="highlight">pilas</span>, <span class="highlight">colas</span> y <span class="highlight">lista</span>, <span class="highlight">colas de prioridad</span>, <span class="highlight">hashmaps</span>, <span class="highlight">grafos</span> y <span class="highlight">árboles</span>) para atender las órdenes que se van realizando los clientes de una manera ordenada y con un sistema de prioridad.</p>
+        <p>Esto junto a un sistema de historial el cual ayuda a ver todos los pedidos entregados y la opción de buscar en el historial a los clientes.</p>
+    </section>
+    
+    <section id="fundamentos">
+        <h2>Fundamentos Utilizados</h2>
+        <p>Las bases de nuestro sistema es <span class="highlight">Java</span>, usando las estructuras de datos vistas durante el certificado: <span class="highlight">pilas</span>, <span class="highlight">colas</span>, <span class="highlight">filas</span>, <span class="highlight">hashmaps</span>, <span class="highlight">árboles binarios</span>. Estas estructuras trabajan en conjunto para resolver las ideas propuestas y lograron coexistir en nuestro sistema, consiguiendo una funcionalidad muy grata para el usuario.</p>
+    </section>
+    
+    <section id="estrategias">
+        <h2>Estrategias Implementadas</h2>
+        <ul class="lista-estilo">
+            <li>Usamos el método de <span class="highlight">divide y vencerás</span> para poder gestionar en piezas más pequeñas las grandes bases del sistema que eran el login, el manejo del historial, gestión de pedidos pendientes, gestión en cocina, asignando cada una de estas bases una estructura en concreto.</li>
+            <li>Trabajar en base a requisitos también nos ayudó bastante ya que dividiendo estos y asignándolos entre nosotros en base a nuestras mejores cualidades hicieron el flujo del trabajo mucho más simple.</li>
+            <li><span class="highlight">Foxy Manager</span> ofrece el manejo de pedidos para la cocina en base a la prioridad entre los clientes en caja y autoservicio, adicionando la dificultad del combo, así mismo el trabajo simultáneo de gestión y creación de nuevos pedidos y revisión del historial. Todo en un mismo sistema.</li>
+        </ul>
+    </section>
+    
+    <section id="reflexion">
+        <h2>Impacto y Éxito</h2>
+        <p>Estas estrategias las vemos clave no solo para la escuela, si no también para nuestra vida profesional, el <span class="highlight">trabajo en equipo</span> es fundamental para todo negocio, por lo que saber dividir las actividades en tareas más pequeñas y asignarlas en base a las fortalezas individuales suma mucho al equipo.</p>
+    </section>
+    
+    <section id="practicas">
+        <h2>Mejores Prácticas</h2>
+        <ul class="lista-estilo">
+            <li><span class="highlight">Trabajar en equipo</span> en clase para fomentar el aprendizaje en grupo fue muy bueno, ya que cuando uno no entendía, entre el equipo nos explicamos y entendemos de forma más sencilla.</li>
+            <li>Además, los <span class="highlight">viernes de avances</span> nos ayudaron mucho a ir dando forma semana tras semana este proyecto, ya que teníamos la oportunidad de tener una retroalimentación semanal y podíamos trabajar en ellos durante la siguiente semana.</li>
+            <li>Este curso nos deja un grato conocimiento en <span class="highlight">Java</span>, ya somos capaces de trabajar ordenadamente con los códigos, mediante <span class="highlight">divide y vencerás</span>, aprendimos a hacer la arquitectura de los sistemas de una manera clara como base de todo sistema, ya que al tener la arquitectura bien hecha, el código es más fácil de hacer.</li>
+            <li>Todas las <span class="highlight">estructuras de datos</span> nos ayudarán mucho para no confundirnos entre ellos, y poder sacarles el mayor provecho en la vida profesional, ya que aplicando la estructura correcta se puede mejorar muchos procesos, lo cual fue parte importante que notamos en nuestro proyecto.</li>
+        </ul>
+    </section>
+    
+    <section id="objetivos">
+        <h2>Objetivos SMART del Proyecto</h2>
+        <div class="smart-grid">
+            <div class="smart-card">
+                <h3>Específico</h3>
+                <p>Entregar la versión 2.0 de Foxy Manager en la presentación del proyecto final, conteniendo todos los requisitos y adicionales que diseñamos.</p>
+            </div>
+            <div class="smart-card">
+                <h3>Medible</h3>
+                <p>Tener todos los requisitos satisfechos y tenerlo reflejado en nuestro repositorio de GitHub al igual de la tabla de requerimientos en la documentación.</p>
+            </div>
+            <div class="smart-card">
+                <h3>Alcanzable</h3>
+                <p>Nuestro equipo desarrolló la capacidad de crear el sistema colaborando en equipo, logrando comprender cómo y por qué se realizó de la manera en el que lo diseñamos.</p>
+            </div>
+            <div class="smart-card">
+                <h3>Relevante</h3>
+                <p>Nuestra exposición sorprenderá a la audiencia que vea nuestro proyecto, recibiendo comentarios y sugerencias positivas.</p>
+            </div>
+            <div class="smart-card">
+                <h3>Temporal</h3>
+                <p>Sistema será entregado el día 28 de septiembre del 2025.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="equipo">
+        <h2>Nuestro Equipo</h2>
+        <div class="equipo">
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/SUNSET.jpeg" alt="Omar">
+                <h3>Omar Fernando Guevara Cavazos</h3>
+                <p>Arquitecto y Diseñador Web</p>
+            </div>
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/Ivan.jpeg" alt="Iván">
+                <h3>Ivan Gerardo Silverio Tenorio</h3>
+                <p>Desarrollador y Programador</p>
+            </div>
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/demian.jpeg" alt="Demian">
+                <h3>Demian Kalil Quiroga Suárez</h3>
+                <p>Desarrollador y Programador</p>
+            </div>
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Sunsetby2006/Foxy-Manager/main/Foxy%20Manager%20web/fotos/Diego.jpeg" alt="Diego">
+                <h3>Diego Alejandro Medellín Méndez</h3>
+                <p>Analista y Escritor Técnico</p>
+            </div>
+        </div>
+    </section>
+    
+    <button class="back-to-top" id="backToTop">↑</button>
+    
+    <footer>
+        <p>Foxy Manager - Sistema de Gestión Inteligente</p>
+    </footer>
+    
+    <script>
+        // Botón para volver al inicio
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Efecto de desplazamiento suave para los enlaces del menú
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>
