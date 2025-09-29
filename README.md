@@ -141,10 +141,10 @@ Para conocer más sobre nuestra visión, metodología y equipo, visite nuestra p
 
 | Rol | Integrante | Responsabilidades |
 |-----|------------|-------------------|
-| Arquitecto y Web Master | Omar Fernando Guevara Cavazos | Arquitectura, web, árbol binario, login |
-| Desarrollador Principal | Iván Gerardo Tenorio Silverio | Estructuras, colas de prioridad, HashMaps |
-| Analista y Documentador | Diego Alejandro Medellín Méndez | Requisitos, documentación, grafos, pruebas |
-| Desarrollador Backend | Demian Kalil Quiroga Suárez | Pedidos, actualización en tiempo real, cronómetros |
+| Arquitecto y Web | Omar Fernando Guevara Cavazos | Arquitectura, web, árbol binario, login |
+| Desarrollador | Iván Gerardo Tenorio Silverio | Estructuras, colas de prioridad, HashMaps |
+| Analista y Escritor técnico | Diego Alejandro Medellín Méndez | Requisitos, documentación, grafos, pruebas |
+| Desarrollador | Demian Kalil Quiroga Suárez | Pedidos, actualización en tiempo real, cronómetros |
 
 ---
 
