@@ -1,0 +1,11 @@
+ID,Cliente,Entrega,Prioridad,Precio,Combo,Tiempo
+1,Marifer,Autoservicio,5,80,Combo Fast,10
+5,Diego,Caja,4,180,Combo King,12
+3,Demian,Caja,3,150,Combo Duo,10
+4,Ivan,Caja,3,140,Combo Fit,7
+2,Omar,Caja,1,220,Combo Sunset,18
+2,Kalil,Autoservicio,5,120,Combo Cheese,8
+1,Fernando,Autoservicio,5,180,Combo King,12
+3,Alejandro,Caja,3,150,Combo Duo,10
+1,Omar Guevara,Autoservicio,5,250,Combo Triple,20
+2,Diego Medellin,Caja,3,80,Combo Fast,10
