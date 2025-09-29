@@ -127,12 +127,12 @@ Para conocer más sobre nuestra visión, metodología y equipo, visite nuestra p
 ---
 
 ## 📊 Evidencias y Documentación
-- **Código Fuente:** Repositorio GitHub.  
+- **Código Fuente:** [Repositorio GitHub](https://github.com/sunsetby2006/Foxy-Manager)  
 - **Documentación Completa:** Archivo PDF en el repositorio.  
-- **Diagramas y Diseños:** [Canva Whiteboard 1.](https://www.canva.com/design/DAGcYSFTWug/oogIERxGGY-7id__t5AAqA/view?utm_content=DAGcYSFTWug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee2dd4f859 
-) / [Canva Whiteboard 2.]([https://www.canva.com/design/DAGcYSFTWug/oogIERxGGY-7id__t5AAqA/view?utm_content=DAGcYSFTWug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee2dd4f859 ](https://www.canva.com/design/DAGzcrnr0lk/QKX5J8MaEQBi_gnUp8RWfQ/view?utm_content=DAGzcrnr0lk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5dab3a6f9c )  
-- **[Presentación del Proyecto:]**(https://www.canva.com/design/DAG0T0ljkSw/a_Jlok2IhXgwP8JXdDlEZA/view?utm_content=DAG0T0ljkSw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h329f0a9a15)
+- **Diagramas y Diseños:** [Canva Whiteboard 1](https://www.canva.com/design/DAGcYSFTWug/oogIERxGGY-7id__t5AAqA/view?utm_content=DAGcYSFTWug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee2dd4f859) / [Canva Whiteboard 2](https://www.canva.com/design/DAGzcrnr0lk/QKX5J8MaEQBi_gnUp8RWfQ/view?utm_content=DAGzcrnr0lk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5dab3a6f9c)  
+- **Presentación del Proyecto:** [Ver en Canva](https://www.canva.com/design/DAG0T0ljkSw/a_Jlok2IhXgwP8JXdDlEZA/view?utm_content=DAG0T0ljkSw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h329f0a9a15)  
 - Visita la [página oficial de Java](https://www.java.com/es/download/manual.jsp) para descargarlo.
+
 
 
 ---
